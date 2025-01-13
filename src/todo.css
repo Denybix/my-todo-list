@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(57deg, #E87C4D 30%, #FFC75F);
+    animation: wave 5s infinite ease-in-out;
+    background-size: 200% 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.todo-body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-right: 5rem;
+}
+
+label
+{
+    margin-left: 4rem;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow:  4px 4px 7px rgba(218, 85, 28, 0.74);
+}
+
+.todo-input
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input
+{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.form-input input
+{
+    width: 20rem;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.display-class
+{
+    margin-top: 3rem;
+    position: relative;
+}
+
+.display-class p
+{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow:  4px 4px 7px rgba(218, 85, 28, 0.74)
+}
+
+.activity-container
+{
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffebce;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-style: none;
+    width: 30rem;
+    box-shadow: 0px 4px 10px 0px rgba(232, 124, 77, 0.671);
+}
+
+.activity-container.move-up
+{
+    transform: translateY(-100%);
+}
+
+.activity-container.move-down
+{
+    transform: translateY(100%);
+}
+
+.activity-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+button
+{
+    margin-left: 1rem;
+    user-select: none;
+    transition: transform 0.1s ease;
+}
+
+button:active
+{
+    transform: translateY(3px);
+}
+
+.up-button
+{
+    background-color: black;
+    color: rgb(56, 255, 6);
+}
+
+.down-button
+{
+    background-color: black;
+    color: rgb(56, 255, 6);
+}
+
+.delete-button
+{
+    background-color: red;
+    color: white;
+}
+
+.activity-container .text
+{
+    flex: 3;
+    user-select: none;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
