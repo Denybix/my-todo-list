@@ -1,4 +1,5 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,138 +13,195 @@ body {
     user-select: none;
 }
 
-.todo-body
-{
+/* Wrapper for the Todo List */
+.todo-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     min-height: 100vh;
-    margin-right: 5rem;
+    max-width: 100%;
+    padding: 4rem 2rem;
 }
 
-label
-{
-    margin-left: 4rem;
+/* Content Centering */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limits the width to avoid overflowing on large screens */
+    margin: 0 auto;    /* Centers the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Label Styling */
+label {
     font-size: 35px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: whitesmoke;
-    text-shadow:  4px 4px 7px rgba(218, 85, 28, 0.74);
+    text-shadow: 4px 4px 7px rgba(218, 85, 28, 0.74);
+    text-align: center;
 }
 
-.todo-input
-{
+/* Input Section */
+.todo-input {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.form-input
-{
+.form-input {
     display: flex;
-    margin-top: 2rem;
-    margin-left: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
 }
 
-.form-input input
-{
-    width: 20rem;
+.form-input input {
+    width: 100%;
+    max-width: 500px;
     border-style: none;
     padding: 1rem;
     border-radius: 1rem;
+    font-size: 1rem;
 }
 
-.display-class
-{
-    margin-top: 3rem;
-    position: relative;
+/* Display Section */
+.display-class {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.display-class p
-{
-    margin-top: 10rem;
-    margin-left: 4rem;
+.display-class p {
     font-size: 35px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: whitesmoke;
-    text-shadow:  4px 4px 7px rgba(218, 85, 28, 0.74)
+    text-shadow: 4px 4px 7px rgba(218, 85, 28, 0.74);
+    text-align: center;
 }
 
-.activity-container
-{
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Activity Containers */
+.activity-container {
     background-color: #ffebce;
     padding: 10px;
     margin: 10px 0;
     border-radius: 8px;
-    border-style: none;
-    width: 30rem;
+    width: 100%;
+    max-width: 500px;
     box-shadow: 0px 4px 10px 0px rgba(232, 124, 77, 0.671);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.activity-container.move-up
-{
-    transform: translateY(-100%);
+.activity-container .text {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
 }
 
-.activity-container.move-down
-{
-    transform: translateY(100%);
-}
-
-.activity-container {
-    transition: transform 0.3s ease-in-out;
-}
-
-button
-{
+button {
+    padding: 0.5rem 1rem;
     margin-left: 1rem;
-    user-select: none;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: transform 0.1s ease;
 }
 
-button:active
-{
+button:active {
     transform: translateY(3px);
 }
 
-.up-button
-{
+.up-button {
     background-color: black;
     color: rgb(56, 255, 6);
 }
 
-.down-button
-{
+.down-button {
     background-color: black;
     color: rgb(56, 255, 6);
 }
 
-.delete-button
-{
+.delete-button {
     background-color: red;
     color: white;
 }
 
-.activity-container .text
-{
-    flex: 3;
-    user-select: none;
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .todo-body {
+        padding: 2rem 1rem;
+    }
+
+    .form-input {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .form-input input {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .display-class {
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .activity-container {
+        padding: 1rem;
+    }
+
+    .activity-container .text {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 }
 
-@keyframes wave {
-    0% {
-        background-position: 0% 0%;
+@media screen and (max-width: 480px) {
+    .todo-body {
+        padding: 1.5rem 1rem;
     }
-    50% {
-        background-position: 100% 50%;
+
+    label {
+        font-size: 24px;
     }
-    100% {
-        background-position: 0% 0%;
+
+    .form-input input {
+        font-size: 0.9rem;
+    }
+
+    .display-class p {
+        font-size: 28px;
+    }
+
+    .activity-container {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .activity-container .text {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 0.5rem;
     }
 }
-
-
