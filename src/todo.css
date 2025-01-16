@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ body {
     user-select: none;
 }
 
-/* Wrapper for the Todo List */
 .todo-body {
     display: flex;
     flex-direction: column;
@@ -24,18 +22,16 @@ body {
     padding: 4rem 2rem;
 }
 
-/* Content Centering */
 .container {
     width: 100%;
-    max-width: 1200px; /* Limits the width to avoid overflowing on large screens */
-    margin: 0 auto;    /* Centers the content */
+    max-width: 1200px; 
+    margin: 0 auto;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* Label Styling */
 label {
     font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,7 +41,6 @@ label {
     text-align: center;
 }
 
-/* Input Section */
 .todo-input {
     display: flex;
     flex-direction: column;
@@ -70,7 +65,6 @@ label {
     font-size: 1rem;
 }
 
-/* Display Section */
 .display-class {
     margin-top: 2rem;
     width: 100%;
@@ -89,7 +83,6 @@ label {
     text-align: center;
 }
 
-/* Activity Containers */
 .activity-container {
     background-color: #ffebce;
     padding: 10px;
@@ -139,7 +132,6 @@ button:active {
     color: white;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .todo-body {
         padding: 2rem 1rem;
