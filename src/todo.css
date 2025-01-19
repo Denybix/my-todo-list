@@ -175,12 +175,6 @@ button:active {
     label {
         font-size: 24px;
     }
-
-    .form-input {
-        gap: 1rem;
-        flex-direction: column;
-        width: 20rem;
-    }
     
     .form-input input {
         font-size: 0.9rem; 
@@ -206,3 +200,5 @@ button:active {
         width: 10rem;
     }
 }
+
+
