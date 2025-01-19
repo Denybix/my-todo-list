@@ -145,6 +145,7 @@ button:active {
     .form-input input {
         width: 100%;
         font-size: 1rem;
+        margin-top: 2rem;
     }
 
     .display-class {
@@ -198,7 +199,7 @@ button:active {
         font-size: 0.8rem;
         padding: 0.5rem;
         width: 7rem;
-        margin-left: 5rem;
+        margin-left: 4rem;
     }
     
     button {
