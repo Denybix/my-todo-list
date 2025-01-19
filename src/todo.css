@@ -193,8 +193,17 @@ button:active {
         font-size: 0.9rem;
     }
 
+    .submit-button
+    {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        width: 7rem;
+        margin-left: 5rem;
+    }
+    
     button {
         font-size: 0.8rem;
         padding: 0.5rem;
     }
+
 }
