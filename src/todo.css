@@ -39,6 +39,7 @@ label {
     color: whitesmoke;
     text-shadow: 4px 4px 7px rgba(218, 85, 28, 0.74);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .todo-input {
