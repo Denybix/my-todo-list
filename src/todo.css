@@ -193,7 +193,6 @@ button:active {
     }
 
     button {
-        width: 100%;
         font-size: .8rem;
         padding: .5rem;
         margin-left: 4rem;
