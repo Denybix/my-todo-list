@@ -177,6 +177,7 @@ button:active {
 
     .form-input input {
         font-size: 0.9rem;
+        overflow-x: hidden;
     }
 
     .display-class p {
@@ -190,10 +191,12 @@ button:active {
 
     .activity-container .text {
         font-size: 0.9rem;
+        overflow-x: hidden;
     }
 
     button {
         font-size: 0.8rem;
         padding: 0.5rem;
+        overflow-x: hidden;
     }
 }
