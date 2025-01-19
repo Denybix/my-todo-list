@@ -39,7 +39,6 @@ label {
     color: whitesmoke;
     text-shadow: 4px 4px 7px rgba(218, 85, 28, 0.74);
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .todo-input {
@@ -175,9 +174,9 @@ button:active {
     label {
         font-size: 24px;
     }
-    
+
     .form-input input {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     .display-class p {
@@ -185,6 +184,7 @@ button:active {
     }
 
     .activity-container {
+        width: 100%;
         padding: 0.8rem;
     }
 
@@ -193,10 +193,7 @@ button:active {
     }
 
     button {
-        font-size: .8rem;
-        padding: .5rem;
-        margin-left: 4rem;
-        width: 7rem;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
 }
-
-
